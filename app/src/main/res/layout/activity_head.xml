@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:background="@color/headColor"
+    android:minHeight="50dip" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxEms="10"
+        android:text="闹钟设置"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:src="@drawable/topbar_return_selector_2" />
+
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="15dip"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_custom_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/question_wheel_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="周一"
+        android:textColor="#333"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/rb_select"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="33dp"
+        android:src="@drawable/unselected" />
+</RelativeLayout>

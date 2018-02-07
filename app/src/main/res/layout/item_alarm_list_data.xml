@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/rl_alarm_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_table"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="31dp"
+            android:layout_toRightOf="@id/tv_table"
+            android:gravity="center"
+            android:textColor="#b6b6b6"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="60dp"
+            android:layout_toRightOf="@id/tv_time">
+
+            <TextView
+                android:id="@+id/tv_repeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="#666"/>
+
+            <TextView
+                android:id="@+id/tv_last_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_repeat"
+                android:layout_marginTop="10dp"
+                android:textSize="10sp"
+                android:textColor="#666"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <Switch
+        android:id="@+id/sw_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@color/white"
+        android:textOff=""
+        android:textOn=""
+        android:thumb="@drawable/selector_switch_thumb_blue"
+        android:track="@drawable/selector_switch_track_blue" />
+
+    <View
+        android:id="@+id/line_two"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/rl_alarm_info"
+        android:layout_marginLeft="15dp"
+        android:background="#ededed" />
+
+</RelativeLayout>
